@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "productInfo.sass"
+    ],
+    "names": [],
+    "file": "productInfo.css"
+}

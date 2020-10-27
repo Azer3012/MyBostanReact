@@ -1,0 +1,42 @@
+.category
+    background-color: #fff
+    box-shadow: 1px 1px 0  #dddddd
+    @media screen and ( max-width: 867px )
+        box-shadow: none
+    .category-menu
+        display: flex
+        flex-direction: column
+        padding: 0
+        @media screen and ( max-width: 867px )
+            flex-direction: row
+            justify-content: space-between
+            
+        .category-item
+            list-style: none
+            margin-bottom: 8px
+            padding: 5px
+            &:hover
+                background: #80bb01
+                .category-link
+                    color: white
+            @media screen and ( max-width: 867px )
+                margin-left: 5px
+                padding: 0
+                display: flex
+                justify-content: center
+            .category-link
+                text-decoration: none
+                display: inline-block
+                color: black
+                font-weight: 600
+                font-size: 16px
+                text-transform: capitalize
+                width: 100%
+                display: flex
+                justify-content: flex-start
+                padding-left: 25px
+                cursor: pointer
+                @media screen and ( max-width: 867px )
+                    display: flex
+                    flex-wrap: nowrap
+                    padding: 0

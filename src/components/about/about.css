@@ -1,0 +1,36 @@
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .about-site {
+  width: 50%;
+}
+
+.about .about-img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .about-img div {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  background-size: cover;
+  background-position: 100%;
+  border: 1px solid white;
+}
+/*# sourceMappingURL=about.css.map */

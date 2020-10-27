@@ -1,0 +1,28 @@
+.App {
+  background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 867px) {
+  .App .media {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.App .media .Category {
+  margin-top: 40px;
+  width: 20%;
+}
+
+@media screen and (max-width: 867px) {
+  .App .media .Category {
+    width: 100%;
+  }
+}
+
+.App .media .Category h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+}
+/*# sourceMappingURL=App.css.map */

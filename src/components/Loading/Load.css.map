@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,IAAI;CAGM;;AAT1B,AAOI,KAPC,CAOD,GAAG,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAAG",
+    "sources": [
+        "Load.sass"
+    ],
+    "names": [],
+    "file": "Load.css"
+}

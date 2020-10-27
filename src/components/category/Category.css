@@ -1,0 +1,92 @@
+.category {
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 0  #dddddd;
+          box-shadow: 1px 1px 0  #dddddd;
+}
+
+@media screen and (max-width: 867px) {
+  .category {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.category .category-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+@media screen and (max-width: 867px) {
+  .category .category-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.category .category-menu .category-item {
+  list-style: none;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.category .category-menu .category-item:hover {
+  background: #80bb01;
+}
+
+.category .category-menu .category-item:hover .category-link {
+  color: white;
+}
+
+@media screen and (max-width: 867px) {
+  .category .category-menu .category-item {
+    margin-left: 5px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.category .category-menu .category-item .category-link {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 867px) {
+  .category .category-menu .category-item .category-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=Category.css.map */

@@ -1,0 +1,64 @@
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.contact-form .contact-us {
+  width: 30%;
+}
+
+.contact-form .contact-us .contact-menu .contact-menu-items {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.contact-form .contact-us .contact-menu .contact-menu-items .contact-header {
+  font-size: 22px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-form .contact-us .contact-menu .contact-menu-items .contact-header i {
+  margin-right: 5px;
+}
+
+.contact-form .contact-us .contact-menu .contact-menu-items .contact-text {
+  font-size: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.contact-form .message {
+  width: 50%;
+}
+
+.contact-form .message button {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #dddddd;
+  padding: 10px 5px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.contact-form .message button:focus {
+  outline: none !important;
+}
+
+.contact-form .message button:hover {
+  background-color: #80BB01;
+  color: white;
+}
+/*# sourceMappingURL=contact.css.map */
