@@ -2,6 +2,7 @@
   background-color: #fff;
   -webkit-box-shadow: 1px 1px 0  #dddddd;
           box-shadow: 1px 1px 0  #dddddd;
+  margin-top: 80px;
 }
 
 @media screen and (max-width: 867px) {
@@ -28,9 +29,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -38,6 +39,12 @@
   list-style: none;
   margin-bottom: 8px;
   padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-left: 25px;
 }
 
 .category .category-menu .category-item:hover {
@@ -52,30 +59,27 @@
   .category .category-menu .category-item {
     margin-left: 5px;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-left: 0;
   }
 }
 
 .category .category-menu .category-item .category-link {
   text-decoration: none;
-  display: inline-block;
-  color: black;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: capitalize;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  color: black;
+  font-weight: 600;
+  font: normal 16px 'Cookie', cursive;
+  text-transform: capitalize;
+  width: 100%;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-left: 25px;
   cursor: pointer;
 }
 
@@ -84,9 +88,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    padding: 0;
+    font: normal 14px 'Cookie', cursive;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=Category.css.map */

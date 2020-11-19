@@ -1,6 +1,9 @@
 .category
     background-color: #fff
     box-shadow: 1px 1px 0  #dddddd
+    margin-top: 80px
+    
+    
     @media screen and ( max-width: 867px )
         box-shadow: none
     .category-menu
@@ -9,12 +12,20 @@
         padding: 0
         @media screen and ( max-width: 867px )
             flex-direction: row
-            justify-content: space-between
+            
+            width: 100%
+            flex-wrap: wrap
             
         .category-item
             list-style: none
             margin-bottom: 8px
             padding: 5px
+            display: flex
+            flex-wrap: nowrap
+            padding-left: 25px
+            
+            
+            
             &:hover
                 background: #80bb01
                 .category-link
@@ -22,21 +33,25 @@
             @media screen and ( max-width: 867px )
                 margin-left: 5px
                 padding: 0
-                display: flex
                 justify-content: center
+                padding-left: 0
+                
             .category-link
                 text-decoration: none
-                display: inline-block
+                display: flex
                 color: black
                 font-weight: 600
-                font-size: 16px
+                font: normal 16px 'Cookie', cursive
                 text-transform: capitalize
                 width: 100%
                 display: flex
                 justify-content: flex-start
-                padding-left: 25px
+                // padding-left: 25px
                 cursor: pointer
                 @media screen and ( max-width: 867px )
                     display: flex
+                    justify-content: center
+                    align-items: center
                     flex-wrap: nowrap
-                    padding: 0
+                    font: normal 14px 'Cookie', cursive
+                    width: 100%

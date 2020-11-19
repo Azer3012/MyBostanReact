@@ -1,4 +1,20 @@
-.product-parent {
+.product-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 867px) {
+  .product-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.product-row .product-parent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,14 +27,22 @@
           align-items: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: 80px;
+  margin-right: 8px;
 }
 
-.product-parent:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media screen and (max-width: 480px) {
+  .product-row .product-parent {
+    width: 100%;
+  }
 }
 
-.product-parent .product {
+.product-row .product-parent:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.product-row .product-parent .product {
   background-color: #fff;
   height: 150px;
   width: 200px;
@@ -27,17 +51,17 @@
   position: relative;
 }
 
-.product-parent .product:hover {
+.product-row .product-parent .product:hover {
   cursor: pointer;
 }
 
-.product-parent .product:hover .about {
+.product-row .product-parent .product:hover .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.product-parent .product::after {
+.product-row .product-parent .product::after {
   content: "";
   position: absolute;
   top: 0;
@@ -48,7 +72,7 @@
   z-index: 10;
 }
 
-.product-parent .product .about {
+.product-row .product-parent .product .about {
   text-decoration: none;
   text-transform: capitalize;
   color: white;
@@ -70,7 +94,7 @@
   z-index: 20;
 }
 
-.product-parent .info {
+.product-row .product-parent .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,21 +113,21 @@
   background-color: #fff;
 }
 
-.product-parent .info .product-category {
+.product-row .product-parent .info .product-category {
   color: black;
   text-transform: capitalize;
   font-weight: 800;
-  font-size: 15px;
+  font: normal 15px 'Cookie', cursive;
 }
 
-.product-parent .info .product-name {
+.product-row .product-parent .info .product-name {
   color: black;
   text-transform: capitalize;
   font-weight: 800;
-  font-size: 16px;
+  font: normal 16px 'Cookie', cursive;
 }
 
-.product-parent .info .product-price {
+.product-row .product-parent .info .product-price {
   color: black;
   text-transform: capitalize;
 }

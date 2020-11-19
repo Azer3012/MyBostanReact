@@ -35,9 +35,9 @@ const About = () => {
           </ul>
         </div>
         <div className="about-img">
-            <div style={{backgroundImage:`url(about/3.jpg)`}}></div>
+            {/* <div style={{backgroundImage:`url(about/3.jpg)`}}></div> */}
             
-            
+            <img src="about/3.jpg" alt=""/>
         </div>
 
       </div>

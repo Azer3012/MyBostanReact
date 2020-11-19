@@ -1,8 +1,13 @@
 .product-about {
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
 }
 
 .product-about .product-image {
@@ -25,23 +30,22 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px 20px;
 }
 
 .product-about .product-own .product-name {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 22px;
+  font: normal 22px 'Cookie', cursive;
   font-weight: 600;
   text-transform: capitalize;
 }
 
 .product-about .product-own .product-price {
   color: #80BB01;
-  font-size: 25px;
+  font: normal 25px 'Cookie', cursive;
 }
 
 .product-about .product-own .product-description {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 16px;
+  font: normal 16px 'Cookie', cursive;
   font-weight: 500;
   text-transform: capitalize;
   display: -webkit-box;
@@ -72,6 +76,7 @@
   border: 1px solid #80BB01;
   border-radius: 15px;
   color: white;
+  margin-top: 10px;
 }
 
 .product-about .product-own .product-add:focus {

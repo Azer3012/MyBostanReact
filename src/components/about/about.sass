@@ -1,8 +1,14 @@
 .about
     display: flex
-    
+    font: normal 16px 'Cookie', cursive
+    flex-wrap: wrap
+    @media screen and ( max-width: 1062px )
+        flex-direction: column
+        align-items: center
+        
     .about-site
         width: 50%
+        
         
         .about-title
         .about-text
@@ -16,11 +22,8 @@
         flex-direction: column
         align-items: center
         justify-content: space-between
-
-        div
+        img
             width: 100%
-            height: 100% 
-            margin: 10px
-            background-size: cover
-            background-position: 100% 
-            border: 1px solid white
+            object-fit: contain
+
+       

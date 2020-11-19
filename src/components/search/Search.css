@@ -11,22 +11,30 @@
   border: 1px solid #dddddd;
   border-radius: 20px;
   width: 250px;
-  margin-right: 30px;
-  padding: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+@media screen and (max-width: 460px) {
+  .search .form-input {
+    width: 100px;
+  }
 }
 
 .search .form-input button {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background: #80BB01;
   border-radius: 50%;
   border: 1px solid #80BB01;
+  position: absolute;
+  right: -1px;
+  top: -2px;
 }
 
 .search .form-input button:focus {

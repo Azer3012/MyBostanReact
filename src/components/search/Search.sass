@@ -1,31 +1,32 @@
 .search
     display: flex
     align-items: center
-    @media screen and ( max-width: 867px )
-        // display: none
-        
     .form-input
         border: 1px solid #dddddd
         border-radius: 20px
         width: 250px
-        margin-right: 30px
-        padding: 2px
         display: flex
-        justify-content: space-between
+        justify-content: space-between   
+        position: relative 
+        @media screen and ( max-width: 460px )
+            width: 100px
+            
         button
-            width: 35px
-            height: 35px
+            width: 30px
+            height: 30px
             background: #80BB01
             border-radius: 50%
             border: 1px solid #80BB01
+            position: absolute
+            right: -1px
+            top: -2px
             &:focus
                 outline: none
             i
-                color: #ffffff
-
-            
+                color: #ffffff   
         input
             border: none
             margin-left: 15px
             &:focus
                 outline: none
+            

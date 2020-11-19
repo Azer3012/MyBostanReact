@@ -1,44 +1,81 @@
-import React from 'react'
-import './footer.css'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./footer.css";
+
 const Footer = () => {
-    return ( 
-        <div className="footer mt-5 container-fluid" >
-            
-            <ul className="footer-menu">
-                <li className="footer-item">
-                    <h3>bizi izləyin</h3>
-                    <div className="social">
-                        <a href="https://www.facebook.com/codersaz/" target="_blank"><i className="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/codersazerbaijan/?hl=tr" target="_blank"><i className="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/coders-azerbaijan/" target="_blank"><i className="fab fa-linkedin"></i></a>
-                    </div>
+  return (
+    <div className="main">
+    <footer className="footer-distributed">
+      <div className="footer-left">
+        <h3>
+          My<span>Bostan</span>
+        </h3>
 
-                </li>
-                <li className="footer-item">
-                    <h3>əlaqə</h3>
+        <p className="footer-links">
+        <NavLink to="/home" >
+            Ana Səhifə
+          </NavLink>
+          ·<NavLink to="/category" >
+            Kateqoriyalar
+          </NavLink>
+          ·<NavLink to="/about" >
+            Haqqımızda
+          </NavLink>·
+          <NavLink to="/contact">
+            Əlaqə
+          </NavLink>
+        </p>
 
-                    <div className="contact">
-                        <p className="adress">
-                            <img src="contact/map.svg" alt=""/>
-                            <span>Adres:<br></br>
-                            Caspian Plaza, Zivarbey Ahmadbeyov Street, Baku, Azerbaycan
-                                </span>
-                            </p>
-                        <p className="phone">
-                            <img src="contact/phone.svg" alt=""/>
-                            <span>Telefon:<br></br>
-                            +994702752015</span>
-                            </p>
-                        <p className="email">
-                            <img src="contact/email.svg" alt=""/>
-                            <span>Email:<br></br>
-                                        Coders@gmail.com</span>
-                        </p>
-                    </div>
-                </li>
-            </ul>
+        <p className="footer-company-name">CodersAzerbaijan &copy; 2020</p>
+      </div>
+
+      <div className="footer-center">
+        <div>
+          <i className="fa fa-map-marker"></i>
+          <p>
+            <span>Bakı şəhəri</span> Bakı, Azərbaycan
+          </p>
         </div>
-     );
-}
- 
+
+        <div>
+          <i className="fa fa-phone"></i>
+          <p>+994556505995</p>
+        </div>
+
+        <div>
+          <i className="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@company.com">Azer0297206@gmail.com.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div className="footer-right">
+        <p className="footer-company-about">
+          <span>About the company</span>
+          Web Dev Trick is a blog for web designers, graphic designers, web
+          developers &amp; SEO Learner.
+        </p>
+
+        <div className="footer-icons">
+          <a href="#">
+            <i className="fab fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i className="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    </div>
+
+  );
+};
+
 export default Footer;

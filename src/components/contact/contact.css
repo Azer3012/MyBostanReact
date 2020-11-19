@@ -6,10 +6,32 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-form h3 {
+  font: normal 26px 'Cookie', cursive;
 }
 
 .contact-form .contact-us {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-form .contact-us {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contact-form .contact-us .contact-menu .contact-menu-items {
@@ -18,8 +40,7 @@
 }
 
 .contact-form .contact-us .contact-menu .contact-menu-items .contact-header {
-  font-size: 22px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font: normal 22px 'Cookie', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,13 +51,28 @@
 }
 
 .contact-form .contact-us .contact-menu .contact-menu-items .contact-text {
-  font-size: 15px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font: normal 15px 'Cookie', cursive;
   font-weight: 500;
 }
 
 .contact-form .message {
   width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-form .message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
 }
 
 .contact-form .message button {

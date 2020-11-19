@@ -13,6 +13,7 @@ import ProductInfo from "./components/product-info/ProductInfo";
 import Footer from "./components/footer/Footer";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
+import ProductInfoRoute from "./components/product-info-route/ProductInfoRoute";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(true);
@@ -39,6 +40,7 @@ function App() {
               <Route path={"/"} exact component={CategoryList} />
               <Route path={"/home"} component={CategoryList} />
               <Route path={"/category"} component={CategoryList} />
+              <Route path={"/category"} component={Filter} />
 
               <Route path={"/"} exact component={Filter} />
               <Route path={"/home"}  component={Filter} />
@@ -47,8 +49,10 @@ function App() {
             <Route path={"/"} exact component={Product} />
             <Route path={"/home"}  component={Product} />
             <Route path={"/category"}  component={Product} />
-
+            
             <Route path={"/product"} component={ProductInfo} />
+            
+
 
 
 

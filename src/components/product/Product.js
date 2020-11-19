@@ -16,7 +16,7 @@ const Product = () => {
 
   return (
     <div className="container">
-      <div className="row">
+      <div className="product-row">
         {products.map((product, index) => {
           if (
             (activeCat === "all" || activeCat === "bütün mallar") &&
@@ -25,7 +25,7 @@ const Product = () => {
             return (
               <div
                 key={index}
-                className="col-md-3 col-md-3 col-sm-3 col-sm-10 product-parent"
+                className="product-parent "
               >
                 <div
                   key={product.id}
@@ -53,7 +53,7 @@ const Product = () => {
             return (
               <div
                 key={index}
-                className="col-md-4 col-md-4 col-sm-4 col-sm-10 product-parent"
+                className="product-parent"
               >
                 <div
                   key={product.id}

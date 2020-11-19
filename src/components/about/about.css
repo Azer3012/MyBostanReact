@@ -2,6 +2,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font: normal 16px 'Cookie', cursive;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1062px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .about .about-site {
@@ -25,12 +40,9 @@
           justify-content: space-between;
 }
 
-.about .about-img div {
+.about .about-img img {
   width: 100%;
-  height: 100%;
-  margin: 10px;
-  background-size: cover;
-  background-position: 100%;
-  border: 1px solid white;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=about.css.map */
