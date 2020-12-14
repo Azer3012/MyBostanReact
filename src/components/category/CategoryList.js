@@ -1,14 +1,15 @@
 import React from "react";
-import { useInitialState } from "../context/Context";
+import { useContext } from "react";
+import { Context } from "../context/Context";
+
+
 import "./Category.css";
 
 const CategoryList = () => {
-  const initialSate = useInitialState();
-  const categories = initialSate.category;
+  const { categories,products,clickedCategory,selectedCategory } = useContext(Context);
 
   return (
     <div className="category">
-      
       <hr />
       <ul className="category-menu">
         {categories.map((category, index) => {
@@ -18,7 +19,7 @@ const CategoryList = () => {
                 key={index}
                 // href="#"
                 className="category-link"
-                onClick={(event) => initialSate.getActive(category.name)}
+               onClick={clickedCategory}
               >
                 {category.name}
               </a>

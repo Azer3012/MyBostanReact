@@ -3,11 +3,18 @@
     display: flex
     align-items: center
     justify-content: center
+    
+    
     .basket-cart
         color: #80BB01
         font-size: 25px
         position: relative
         cursor: pointer
+        &:hover
+            .basket-list
+                display: flex
+                transition: all .4s
+        
         .count
             position: absolute
             right: -10px
@@ -26,16 +33,17 @@
             color: white
             
         .basket-list
-            display: flex
+            display: none
             flex-direction: column
             position: absolute
             border: 1px solid #80BB01
-            top: 140%
-            right: 100%
+            top: 110%
+            right: 10%
             width: 300px
             background-color: #fff
             padding: 10px 10px
             z-index: 10
+            
 
             
             .basket-items

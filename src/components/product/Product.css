@@ -6,7 +6,7 @@
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 1036px) {
   .product-row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -47,7 +47,8 @@
   height: 150px;
   width: 200px;
   margin-top: 40px;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   position: relative;
 }
 

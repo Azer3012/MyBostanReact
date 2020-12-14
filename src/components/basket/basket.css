@@ -18,6 +18,14 @@
   cursor: pointer;
 }
 
+.basket .basket-cart:hover .basket-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
 .basket .basket-cart .count {
   position: absolute;
   right: -10px;
@@ -43,17 +51,15 @@
 }
 
 .basket .basket-cart .basket-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
   border: 1px solid #80BB01;
-  top: 140%;
-  right: 100%;
+  top: 110%;
+  right: 10%;
   width: 300px;
   background-color: #fff;
   padding: 10px 10px;

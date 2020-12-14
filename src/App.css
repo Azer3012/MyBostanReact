@@ -2,8 +2,11 @@
   background-color: #F5F5F5;
 }
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 1071px) {
   .App .media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -14,7 +17,7 @@
   width: 20%;
 }
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 1071px) {
   .App .media .Category {
     width: 100%;
   }

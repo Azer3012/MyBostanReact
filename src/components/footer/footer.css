@@ -1,10 +1,13 @@
 .main {
-	height: 300px;;
+	height: 100px;
 	background-color: #292c2f;
 	color: white !important;
 	font-size: 38pt;
 	text-align: center;
 	line-height: 300px;
+	
+	
+
 }
 
 a{

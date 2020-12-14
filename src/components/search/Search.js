@@ -2,21 +2,17 @@ import React from "react";
 
 import "./Search.css";
 
-
-
 const Search = () => {
-
- 
-  return ( 
+  return (
     <div className="search">
-    <div className="form-input">
-      <input type="text" className="search-input" />
-      <button >
-        <i className="fas fa-search"></i>
-      </button>
+      <div className="form-input">
+        <input type="text" className="search-input" />
+        <button>
+          <i className="fas fa-search"></i>
+        </button>
+      </div>
     </div>
-  </div>
-   );
-}
- 
+  );
+};
+
 export default Search;

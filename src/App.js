@@ -8,12 +8,11 @@ import CategoryList from "./components/category/CategoryList";
 import Product from "./components/product/Product";
 import Filter from "./components/filter/Filter";
 import Load from "./components/Loading/Load";
-import ContextProvider from "./components/context/Context";
+import ContextProvider  from "./components/context/Context";
 import ProductInfo from "./components/product-info/ProductInfo";
 import Footer from "./components/footer/Footer";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
-import ProductInfoRoute from "./components/product-info-route/ProductInfoRoute";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(true);
@@ -24,50 +23,49 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Switch>
-    <ContextProvider>
-      
-      <div className="App">
-        {isLoaded ? <Load /> : null}
+      <Switch>
+        <ContextProvider>
+          <div className="App">
+            {isLoaded ? <Load /> : null}
 
-        <div>
-          <Header />
-          <Route path={"/"} exact component={Carousell} />
-          <Route path={"/home"}  component={Carousell} />
-          <Route path={"/contact"} exact component={Contact} />
-          <div className="container-fluid media">
-            <div className="Category">
-              <Route path={"/"} exact component={CategoryList} />
-              <Route path={"/home"} component={CategoryList} />
-              <Route path={"/category"} component={CategoryList} />
-              <Route path={"/category"} component={Filter} />
+            <div>
+              <Header />
+              <Route path={"/"} exact component={Carousell} />
+              <Route path={"/home"} component={Carousell} />
+              <Route path={"/contact"} exact component={Contact} />
+              <div className="container-fluid media">
+                <div className="Category">
+                  <Route path={"/"} exact component={CategoryList} />
+                  <Route path={"/home"} component={CategoryList} />
+                  <Route path={"/category"} component={CategoryList} />
+                  <Route path={"/category"} component={Filter} />
 
-              <Route path={"/"} exact component={Filter} />
-              <Route path={"/home"}  component={Filter} />
+                  {/* <Route path={"/"} exact component={Filter} />
+                  <Route path={"/home"} component={Filter} /> */}
+                </div>
+
+                <Route path={"/"} exact component={Product} />
+                <Route path={"/home"} component={Product} />
+                <Route path={"/category"} component={Product} />
+
+                <Route path={"/product"} component={ProductInfo} />
+              </div>
+              <Route path={"/about"} exact component={About} />
+              
             </div>
 
-            <Route path={"/"} exact component={Product} />
-            <Route path={"/home"}  component={Product} />
-            <Route path={"/category"}  component={Product} />
+           
+            <Route path={"/"} exact component={Footer} />
+            <Route path={"/home"} exact component={Footer} />
+            <Route path={"/about"} exact component={Footer} />
+            <Route path={"/category"} exact component={Footer} />
+            <Route path={"/contact"} exact component={Footer} />
+            <Route path={"/product"} exact component={Footer} />
             
-            <Route path={"/product"} component={ProductInfo} />
-            
-
-
-
-
-            
-
-
           </div>
-          <Route path={"/about"} exact component={About} />
-        </div>
-        
-        <hr/>
-        <Footer />
-      </div>
-    </ContextProvider>
-    </Switch>
+          
+        </ContextProvider>
+      </Switch>
     </BrowserRouter>
   );
 }
