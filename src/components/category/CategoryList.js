@@ -2,11 +2,13 @@ import React from "react";
 import { useContext } from "react";
 import { Context } from "../context/Context";
 
-
 import "./Category.css";
 
 const CategoryList = () => {
-  const { categories,products,clickedCategory,selectedCategory } = useContext(Context);
+  const {
+    categories,
+    clickedCategory
+  } = useContext(Context);
 
   return (
     <div className="category">
@@ -15,14 +17,14 @@ const CategoryList = () => {
         {categories.map((category, index) => {
           return (
             <li key={index} className="category-item">
-              <a
+              <span
+                
                 key={index}
-                // href="#"
                 className="category-link"
-               onClick={clickedCategory}
+                onClick={clickedCategory}
               >
                 {category.name}
-              </a>
+              </span>
             </li>
           );
         })}

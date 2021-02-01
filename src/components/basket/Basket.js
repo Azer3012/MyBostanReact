@@ -1,46 +1,33 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Context } from "../context/Context";
 import "./basket.css";
-
+import {FaShoppingCart} from  'react-icons/fa'
+import {FaTrashAlt} from  'react-icons/fa'
 const Basket = () => {
-  
-
   const { basket, deleteFromBasket } = useContext(Context);
-
-  
-
-  
-
- 
-
-
 
   let total = 0;
 
   return (
-    <div className="basket" >
-      <div className="fas fa-shopping-cart basket-cart"  >
+    <div className="basket">
+      <div className="basket-cart">
+        <FaShoppingCart/>
         <span className="count">{basket.length}</span>
-        <ul
-          className="basket-list"
-          
-          
-        >
-          
+        <ul className="basket-list">
           {basket.length ? (
             basket.map((basketProduct) => {
-              total+=basketProduct.weight*basketProduct.price;
+              total += basketProduct.weight * basketProduct.price;
               return (
                 <li key={basketProduct.id} className="basket-items">
                   {`${basketProduct.weight} kq ${basketProduct.name} qiyməti ${
                     basketProduct.weight * basketProduct.price
                   } `}
                   &#8380;
-                  
                   <i
-                    className="fas fa-trash-alt"
                     onClick={() => deleteFromBasket(basketProduct.id)}
-                  ></i>
+                  >
+                    <FaTrashAlt/>
+                  </i>
                 </li>
               );
             })

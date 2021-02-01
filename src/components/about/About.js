@@ -1,5 +1,5 @@
 import React from "react";
-import './about.css'
+import "./about.css";
 const About = () => {
   return (
     <div className="container-fluid">
@@ -24,7 +24,6 @@ const About = () => {
               doğuran sistemlə kənddən şəhərə məhsul çatdırılması.
             </li>
             <li>
-              
               Alıci sayta daxil olaraq fermerlər və onların heyvanat sahələrinin
               şəkillərini görür.
             </li>
@@ -35,11 +34,8 @@ const About = () => {
           </ul>
         </div>
         <div className="about-img">
-            {/* <div style={{backgroundImage:`url(about/3.jpg)`}}></div> */}
-            
-            <img src="about/3.jpg" alt=""/>
+          <img src="about/3.jpg" alt="" />
         </div>
-
       </div>
     </div>
   );

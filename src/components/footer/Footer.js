@@ -1,6 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./footer.css";
+import {FaMapMarker} from 'react-icons/fa';
+import {FaPhone} from 'react-icons/fa';
+import {FaFacebookSquare} from 'react-icons/fa';
+import {FaTwitterSquare} from 'react-icons/fa';
+import {FaEnvelope} from 'react-icons/fa';
+import {FaLinkedin} from 'react-icons/fa';
+import {FaGithubSquare} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -10,7 +17,7 @@ const Footer = () => {
           <h3>
             My<span>Bostan</span>
           </h3>
-
+          
           <p className="footer-links">
             <NavLink to="/home">Ana Səhifə</NavLink>·
             <NavLink to="/category">Kateqoriyalar</NavLink>·
@@ -23,21 +30,25 @@ const Footer = () => {
 
         <div className="footer-center">
           <div>
-            <i className="fa fa-map-marker"></i>
+            <i><FaMapMarker/></i>
             <p>
               <span>Bakı şəhəri</span> Bakı, Azərbaycan
             </p>
           </div>
 
           <div>
-            <i className="fa fa-phone"></i>
+            <i>
+              <FaPhone/>
+            </i>
             <p>+994556505995</p>
           </div>
 
           <div>
-            <i className="fa fa-envelope"></i>
+            <i>
+              <FaEnvelope/>
+            </i>
             <p>
-              <a href="mailto:support@company.com">Azer0297206@gmail.com.com</a>
+              <a href="mailto:azer0297206@gmail.com">Azer0297206@gmail.com.com</a>
             </p>
           </div>
         </div>
@@ -50,17 +61,19 @@ const Footer = () => {
           </p>
 
           <div className="footer-icons">
-            <a href="#">
-              <i className="fab fa-facebook"></i>
+            <a href="https://www.facebook.com/azer.abishov.1/">
+              <i>
+                <FaFacebookSquare/>
+              </i>
             </a>
-            <a href="#">
-              <i className="fab fa-twitter"></i>
+            <a href="https://twitter.com/?lang=tr">
+              <i><FaTwitterSquare/></i>
             </a>
-            <a href="#">
-              <i className="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/azer-abi%C5%9Fov-5778a8184/">
+              <i><FaLinkedin/></i>
             </a>
-            <a href="#">
-              <i className="fab fa-github"></i>
+            <a href="https://github.com/Azer3012">
+              <i><FaGithubSquare/></i>
             </a>
           </div>
         </div>

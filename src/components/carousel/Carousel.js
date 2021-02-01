@@ -7,7 +7,6 @@ import {
   CarouselCaption,
 } from "reactstrap";
 
-
 const items = [
   {
     src: "carousel/4.jpg",
@@ -54,7 +53,6 @@ const Carousell = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        
         <div
           style={{
             backgroundImage: `url(${item.src})`,

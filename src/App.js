@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/header/Header";
-import "./css-fontawesome/all.css";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Carousell from "./components/carousel/Carousel";
@@ -13,6 +12,8 @@ import ProductInfo from "./components/product-info/ProductInfo";
 import Footer from "./components/footer/Footer";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
+
+
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(true);

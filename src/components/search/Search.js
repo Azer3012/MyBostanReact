@@ -1,5 +1,6 @@
 import React from "react";
 
+import {FaSearch} from 'react-icons/fa'
 import "./Search.css";
 
 const Search = () => {
@@ -8,7 +9,7 @@ const Search = () => {
       <div className="form-input">
         <input type="text" className="search-input" />
         <button>
-          <i className="fas fa-search"></i>
+          <FaSearch style={{color:"white"}}/>
         </button>
       </div>
     </div>

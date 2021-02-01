@@ -21,6 +21,11 @@
 
 .about .about-site {
   width: 50%;
+  padding: 20px 15px;
+}
+
+.about .about-site .about-title {
+  margin-top: 80px;
 }
 
 .about .about-img {
