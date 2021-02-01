@@ -31,7 +31,7 @@ const Contact = () => {
                 <h5 className="contact-header">
                   <i className="fas fa-phone"></i>Telefon
                 </h5>
-                <span className="contact-text">+994702752015</span>
+                <span className="contact-text">+994556505995</span>
               </li>
               <hr />
               <li className="contact-menu-items">
