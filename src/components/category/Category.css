@@ -3,12 +3,17 @@
   -webkit-box-shadow: 1px 1px 0  #dddddd;
           box-shadow: 1px 1px 0  #dddddd;
   margin-top: 80px;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 100px;
 }
 
 @media screen and (max-width: 1071px) {
   .category {
     -webkit-box-shadow: none;
             box-shadow: none;
+    position: fixed;
+    top: 0;
   }
 }
 
@@ -32,6 +37,7 @@
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    position: static;
   }
 }
 

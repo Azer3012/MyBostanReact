@@ -2,10 +2,18 @@
     background-color: #fff
     box-shadow: 1px 1px 0  #dddddd
     margin-top: 80px
+    position: sticky !important
+    top: 100px
+    
+    
+
+    
     
     
     @media screen and ( max-width: 1071px )
         box-shadow: none
+        position: fixed
+        top: 0
         
     .category-menu
         display: flex
@@ -15,6 +23,7 @@
             flex-direction: row
             width: 100%
             flex-wrap: wrap
+            position: static
         .category-item
             list-style: none
             margin-bottom: 8px

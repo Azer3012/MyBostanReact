@@ -30,7 +30,8 @@
       "price": 2,
       "img": "product/apple.jpg",
       "quantity": 1,
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?"
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?",
+      "shortDescription":"Lorem ipsum dolor sit"
     },
     {
       "id": 1,
@@ -39,16 +40,18 @@
       "price": 1,
       "img": "product/kelem.jpg",
       "quantity": 1,
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?"
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?",
+      "shortDescription":"Lorem ipsum dolor sit"
     },
     {
       "id": 2,
       "category": "mürəbbə",
-      "name": "gilas mürəbbəsi",
+      "name": " mürəbbə",
       "price": 5,
       "img": "product/jam.jpg",
       "quantity": 1,
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?"
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?",
+      "shortDescription":"Lorem ipsum dolor sit"
     },
     {
       "id": 3,
@@ -57,7 +60,8 @@
       "price": 12,
       "img": "product/meat.jpg",
       "quantity": 1,
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?"
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?",
+      "shortDescription":"Lorem ipsum dolor sit"
     },
     {
       "id": 4,
@@ -66,7 +70,8 @@
       "price": 1,
       "img": "product/milk.jpg",
       "quantity": 1,
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?"
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?",
+      "shortDescription":"Lorem ipsum dolor sit"
     },
     {
       "id": 5,
@@ -75,16 +80,9 @@
       "price": 10,
       "img": "product/honeyy.jpg",
       "quantity": 1,
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?"
-    },
-    {
-      "id": 6,
-      "category": "bitki və arı məhsulları",
-      "name": "bal",
-      "price": 10,
-      "img": "product/honeyy.jpg",
-      "quantity": 1,
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?"
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit culpa odit sunt sequi reiciendis asperiores. Lorem ipsumdolor sit, amet consectetur adipisicing elit. Necessitatibus atquequos unde sint in corrupti aliquid! Ipsum nesciunt eos aspernatur?",
+      "shortDescription":"Lorem ipsum dolor sit"
     }
+    
   ]
 }

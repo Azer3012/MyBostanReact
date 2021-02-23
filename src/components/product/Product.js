@@ -25,6 +25,7 @@ const Product = () => {
           </div>
           <div className="info">
             <p className="product-name">{product.name}</p>
+            <p className="short-desc">{product.shortDescription}</p>
             <span className="product-price">{product.price} &#8380;</span>
           </div>
         </div>
@@ -47,6 +48,7 @@ const Product = () => {
           </div>
           <div className="info">
             <p className="product-name">{product.name}</p>
+            <p className="short-desc">{product.shortDescription}</p>
             <span className="product-price">{product.price} &#8380;</span>
           </div>
         </div>

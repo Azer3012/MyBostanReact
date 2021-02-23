@@ -133,4 +133,12 @@
   color: black;
   text-transform: capitalize;
 }
+
+.product-row .product-parent .info .short-desc {
+  color: black;
+  text-transform: capitalize;
+  font-weight: 600;
+  font: normal 16px 'Cookie', cursive;
+  padding-top: 5px;
+}
 /*# sourceMappingURL=Product.css.map */
