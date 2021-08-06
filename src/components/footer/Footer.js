@@ -25,7 +25,7 @@ const Footer = () => {
             <NavLink to="/contact">Əlaqə</NavLink>
           </p>
 
-          <p className="footer-company-name">CodersAzerbaijan &copy; 2020</p>
+          <p className="footer-company-name">AbishovAzar &copy; 2020</p>
         </div>
 
         <div className="footer-center">
@@ -48,7 +48,7 @@ const Footer = () => {
               <FaEnvelope/>
             </i>
             <p>
-              <a href="mailto:azer0297206@gmail.com">Azer0297206@gmail.com.com</a>
+              <a href="mailto:abishovazar@gmail.com">abishovazar@gmail.com.com</a>
             </p>
           </div>
         </div>

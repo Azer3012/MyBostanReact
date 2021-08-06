@@ -1,6 +1,21 @@
 import React from "react";
 import "./contact.css";
+import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
+
 const Contact = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_vh58l3b', e.target, init("user_tqDfDJylTsShqQaDftroO"))
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  }
   return (
     <div>
       <iframe
@@ -39,19 +54,26 @@ const Contact = () => {
                   <i className="far fa-envelope"></i>Email
                   
                 </h5>
-                <span className="contact-text">Coders@gmail.com</span>
+                <span className="contact-text">abishovazar@gmail.com</span>
               </li>
             </ul>
           </div>
           <div className="message">
+            <form onSubmit={sendEmail}>
             <h3>Mesajızı daxil edin</h3>
             <label htmlFor="">Adınız</label>
-            <input type="text" className="form-control" />
-            <label htmlFor="">Emailiniz</label>
-            <input type="text" className="form-control" />
+            <input type="text" className="form-control" name="name" />
+            <label htmlFor="">Alıcı yoxsa Satıcı</label>
+            <select className="form-control" name="title" id="">
+              <option value="satıcı">Satıcı</option>
+              <option value="alıcı">Alıcı</option>
+            </select>
+            <label htmlFor="">Nömrəniz</label>
+            <input type="text" className="form-control" name="phone_number" />
             <label htmlFor="">Mətni daxil edin</label>
-            <textarea name="" id="" className="form-control"></textarea>
-            <button>Göndər</button>
+            <textarea name="" id="" className="form-control" name="text"></textarea>
+            <button type="submit" value="Send Message">Göndər</button>
+            </form>
           </div>
         </div>
       </div>
